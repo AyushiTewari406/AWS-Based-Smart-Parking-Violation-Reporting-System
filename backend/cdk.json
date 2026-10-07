@@ -1,0 +1,11 @@
+{
+  "app": "node infrastructure/app.js",
+  "watch": {
+    "include": ["src/**", "infrastructure/**"],
+    "exclude": ["node_modules/**", "cdk.out/**", "tests/**"]
+  },
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true
+  }
+}

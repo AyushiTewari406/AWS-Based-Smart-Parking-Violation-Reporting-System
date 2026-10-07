@@ -1,0 +1,58 @@
+// Centralized configuration. Fine/severity values are placeholders —
+// change them here only; nothing else in the codebase should hardcode a number.
+
+export const ROLES = {
+  USER: "USER",
+  ADMIN: "ADMIN",
+};
+
+export const VIOLATION_STATUS = {
+  PENDING: "PENDING",
+  VERIFIED: "VERIFIED",
+  REJECTED: "REJECTED",
+};
+
+export const PAYMENT_STATUS = {
+  UNPAID: "UNPAID",
+  PENDING: "PENDING",
+  PAID: "PAID",
+  FAILED: "FAILED",
+};
+
+export const SEVERITY = {
+  MINOR: "MINOR",
+  MODERATE: "MODERATE",
+  MAJOR: "MAJOR",
+  SEVERE: "SEVERE",
+};
+
+export const FINE_BY_SEVERITY = {
+  [SEVERITY.MINOR]: 500,
+  [SEVERITY.MODERATE]: 750,
+  [SEVERITY.MAJOR]: 1000,
+  [SEVERITY.SEVERE]: 2000,
+};
+
+export const VIOLATION_RULES = {
+  NO_PARKING: { severity: SEVERITY.MINOR },
+  WRONG_PARKING: { severity: SEVERITY.MODERATE },
+  DISABLED_PARKING: { severity: SEVERITY.MAJOR },
+  NO_PARKING_ZONE: { severity: SEVERITY.MODERATE },
+  EMERGENCY_ACCESS_BLOCK: { severity: SEVERITY.SEVERE },
+  PARKING_TIME_EXCEEDED: { severity: SEVERITY.MINOR },
+  UNAUTHORIZED_PARKING: { severity: SEVERITY.MODERATE },
+};
+
+export const VIOLATION_CATEGORIES = Object.keys(VIOLATION_RULES);
+
+export const DEFAULT_REPEAT_VIOLATION_WINDOW_DAYS = 90;
+export const DEFAULT_REPEAT_VIOLATION_THRESHOLD = 2;
+
+export const ERROR_CODES = {
+  VALIDATION_ERROR: "VALIDATION_ERROR",
+  UNAUTHORIZED: "UNAUTHORIZED",
+  FORBIDDEN: "FORBIDDEN",
+  NOT_FOUND: "NOT_FOUND",
+  CONFLICT: "CONFLICT",
+  INTERNAL_ERROR: "INTERNAL_ERROR",
+};

@@ -1,0 +1,46 @@
+=== node --check verification log ===
+Generated: Tue Oct  6 14:08:29 UTC 2026
+
+PASS  infrastructure/app.js
+PASS  infrastructure/routes.js
+PASS  infrastructure/smart-parking-stack.js
+PASS  src/config/env.js
+PASS  src/handlers/admin/getDashboardStats.js
+PASS  src/handlers/admin/listPendingViolations.js
+PASS  src/handlers/admin/rejectViolation.js
+PASS  src/handlers/admin/verifyViolation.js
+PASS  src/handlers/reports/locationWiseReport.js
+PASS  src/handlers/reports/monthlyStatsReport.js
+PASS  src/handlers/uploads/getUploadUrl.js
+PASS  src/handlers/users/getMe.js
+PASS  src/handlers/users/login.js
+PASS  src/handlers/users/register.js
+PASS  src/handlers/users/updateMe.js
+PASS  src/handlers/vehicles/createVehicle.js
+PASS  src/handlers/vehicles/deleteVehicle.js
+PASS  src/handlers/vehicles/getVehicle.js
+PASS  src/handlers/vehicles/listMyVehicles.js
+PASS  src/handlers/vehicles/updateVehicle.js
+PASS  src/handlers/violations/createViolation.js
+PASS  src/handlers/violations/getEvidenceUrl.js
+PASS  src/handlers/violations/getVehicleViolations.js
+PASS  src/handlers/violations/getViolation.js
+PASS  src/handlers/violations/payFine.js
+PASS  src/middleware/authMiddleware.js
+PASS  src/repositories/statsRepository.js
+PASS  src/repositories/userRepository.js
+PASS  src/repositories/vehicleRepository.js
+PASS  src/repositories/violationRepository.js
+PASS  src/services/auth/passwordService.js
+PASS  src/services/auth/tokenService.js
+PASS  src/services/dynamodb/client.js
+PASS  src/services/notification/notificationService.js
+PASS  src/services/s3/s3Service.js
+PASS  src/services/violation/repeatViolationService.js
+PASS  src/services/violation/severityService.js
+PASS  src/utils/constants.js
+PASS  src/utils/errors.js
+PASS  src/utils/responses.js
+PASS  src/utils/validation.js
+
+=== Total files checked: 41 ===
